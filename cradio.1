@@ -1,0 +1,77 @@
+.Dd 2023-12-02
+.Dt CRADIO 1
+.Sh NAME
+.Nm cradio
+.Nd basic tui radio player
+.Sh SYNOPSIS
+.Nm
+.Op Ar file
+.Sh DESCRIPTION
+.Nm
+is a very basic TUI wrapper around MPV for playing internet radio stations.
+.Sh USAGE
+.Bl -tag -width Ds
+.It Em Normal
+.Bl -tag -width Ds
+.It Sy 0
+Volume up.
+.It Sy 9
+Volume down.
+.It Sy a
+Add station.
+.It Sy c
+Pause.
+.It Sy e
+Edit station.
+.It Sy g
+Jump to top.
+.It Sy G
+Jump to bottom.
+.It Sy j
+Cursor down.
+.It Sy k
+Cursor up.
+.It Sy l
+Play current.
+.It Sy m
+Mute.
+.It Sy n
+Next search match.
+.It Sy N
+Previous search match.
+.It Sy p
+Swap current index with selected index.
+.It Sy q
+Quit.
+.It Sy R
+Reload buffer.
+.It Sy y
+Select index.
+.It Sy /
+Search.
+.El
+.El
+.Bl -tag -width Ds
+.It Em Search
+.Bl -tag -width Ds
+.It Sy Enter
+Confirm search.
+.It Sy ESC
+Exit search.
+.El
+.El
+.Bl -tag -width Ds
+.It Em Editing
+.Bl -tag -width Ds
+.It Sy ENTER
+Confirm edit.
+.Sh STATIONS
+.Nm
+reads from a stations list from
+.Op Ar file
+or $HOME/.config/cradio/stations. Changes are written on quit. List must be
+formatted as:
+.It Sy
+	"<name>" "<url>"
+.It Sy
+	"<name>" "<url>"
