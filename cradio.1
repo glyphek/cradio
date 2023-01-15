@@ -1,0 +1,57 @@
+.Dd 2022-02-10
+.Dt CRADIO 1
+.Sh NAME
+.Nm cradio
+.Nd basic tui radio player
+.Sh SYNOPSIS
+.Nm
+.Sh DESCRIPTION
+.Nm
+is a very basic TUI wrapper around MPV for playing internet radio stations.
+.Sh USAGE
+.Bl -tag -width Ds
+.It Em Normal
+.Bl -tag -width Ds
+.It Sy 0
+Volume up.
+.It Sy 9
+Volume down.
+.It Sy c
+Pause.
+.It Sy g
+Jump to top.
+.It Sy G
+Jump to bottom.
+.It Sy j
+Cursor down.
+.It Sy k
+Cursor up.
+.It Sy l
+Play selected.
+.It Sy m
+Mute.
+.It Sy /
+Forward search.
+.It Sy ?
+Reverse search.
+.It Sy q
+Quit.
+.El
+.El
+.Bl -tag -width Ds
+.It Em Search
+.Bl -tag -width Ds
+.It Sy ESC
+Exit search
+.It Sy n
+Next match.
+.It Sy N
+Previous match.
+.Sh STATIONS
+.Nm
+reads from a stations list from $HOME/cradio/stations. List must be formatted
+as:
+.It Sy
+	"<station>" "<url>"
+.It Sy
+	"<station>" "<url>"

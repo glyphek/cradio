@@ -1,0 +1,10 @@
+cradio
+------
+
+A very basic TUI wrapper around mpv using termbox2 that reads from a stations 
+list formatted as:
+
+	"<name>" "<url>"
+	"<name>" "<url>"
+
+WIP.
