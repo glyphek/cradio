@@ -1,0 +1,28 @@
+cradio
+======
+A very basic TUI wrapper around mpv with vi-like bindings using termbox2.
+Reads from a stations list formatted as:
+
+    "<name>" "<url>"
+    "<name>" "<url>"
+
+WIP.
+
+
+Requirements
+------------
+POSIX environment
+mpv header files
+
+
+Installation
+------------
+Edit config.mk if needed (/usr/local namespace by default).
+Build and install (if necessary as root) using:
+
+    make clean install
+
+
+Documentation
+-------------
+View man page for additional usage information.
